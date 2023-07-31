@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="dashboard.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-brown bg-brown">
+        <span class="navbar-brand mb-0 h1">Jumlah Kematian Banjir dan Banjir Bandang di Indonesia.</span>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">Grafik Line</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between flex-column flex-md-row">
+                            <!-- Tambahkan label kiri -->
+                            <div id="y-axis-label" style="writing-mode: vertical-rl; text-align: center; margin-right: 0px;">
+                                Jumlah Kematian
+                            </div>
+                            <!-- Tempatkan chart container -->
+                            <div class="chart-container" style="position: relative; height:300px; width:100%;">
+                                <div id="chart"></div>
+                            </div>
+                            <!-- Tambahkan label kanan -->
+                        </div>
+                        <!-- Tambahkan label tahun di bawah chart -->
+                        <div style="text-align: center; margin-top: 5px;">
+                            Tahun
+                        </div>
+                        <div id="chart-legend"></div>
+                    </div>
+                    <div class="card-footer">
+                        Kesimpulan:
+                        Saya membuat perbandingan jumlah kematian dengan tipe Bencana Alam yang disebabkan oleh Banjir dan Banjir Bandang dari tahun 2005-2012 dan 2015-2021 di Indonesia. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        body {
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</body>
+</html>
